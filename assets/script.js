@@ -5,6 +5,7 @@
     var dom_word = document.getElementById('word');
     var dom_result = document.getElementById('result');
     var dom_speech = document.getElementById('speech');
+    var tts = document.getElementById("tts");
 
     var request = new XMLHttpRequest();
     request.open('GET', '../data/data.json', true);
@@ -44,6 +45,10 @@
 
     document.onkeydown = function(e) {
         (e.keyCode == 32) && generate();
+    };
+
+    tts.onclick = function() {
+        responsiveVoice.speak(word, 'Spanish Female');
     };
 
 })();

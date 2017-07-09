@@ -81,3 +81,18 @@ h1 {
         -webkit-filter: blur(0);
     }
 }
+
+#icon-headphones {
+    width: 28px;
+    height: 28px;
+    stroke-width: 0;
+    fill: #ccc;
+    pointer-events: none;
+}
+
+#tts {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
