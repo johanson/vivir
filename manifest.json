@@ -1,13 +1,13 @@
 {
-   "chrome_url_overrides": {
-      "newtab": "index.html"
-   },
-   "description": "Vivir: new tab with a new Spanish word.",
-   "icons": {
-      "128": "icon_128.png"
-   },
-	"manifest_version": 2,
-   "name": "Vivir",
-   "version": "1.0.0",
-   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "description": "Vivir: new tab with a new Spanish word.",
+    "icons": {
+        "128": "icon_128.png"
+    },
+    "manifest_version": 2,
+    "name": "Vivir",
+    "version": "1.0.1",
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
