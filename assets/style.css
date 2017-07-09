@@ -1,20 +1,31 @@
 @font-face {
-  font-family: 'Spectral';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Spectral'), local('Spectral-Regular'), url('spectral.woff2') format('woff2');
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Spectral'), local('Spectral-Regular'), url('spectral.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Spectral Bold'), local('Spectral-Bold'), url('spectral_bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Spectral';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Spectral Bold'), local('Spectral-Bold'), url('spectral_bold.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  src: local('Spectral Italic'), local('Spectral-Italic'), url('spectral_italic.woff2') format('woff2');
 }
 
-* { margin: 0; padding: 0; line-height: 1em; }
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
 
-body { 
+body {
     overflow: hidden;
     color: #111;
     font-family: 'Spectral', serif;
