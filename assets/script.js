@@ -1,7 +1,8 @@
 (function() {
 
-    var word, answer, json_words;
-    var speech_types = [];
+    const shuffle_array = (arr) => arr.sort(() => (Math.random() - 0.5));
+
+    var word, answer, speech_type, data;
     var dom_word = document.getElementById('word');
     var dom_result = document.getElementById('result');
     var dom_speech = document.getElementById('speech');
@@ -20,19 +21,23 @@
     request = null;
 
     function save_data(input) {
-        json_words = JSON.parse(input)['0'];
-        for (var i in json_words) {
-            speech_types.push(i);
-        };
+        data = JSON.parse(input)['0'];
     };
 
     function generate() {
-        speech_type = speech_types[0|Math.random() * speech_types.length];
-        var words = json_words[speech_type];
-        var size = Object.keys(words).length - 1;
-        var current = 0|Math.random() * (size - 0);
-        word = Object.keys(words)[current];
-        answer = words[word];
+
+        var temp_array = []
+        for (var i in data) {
+            var parent = i;
+            for (word in data[i]) {
+                temp_array.push([parent, word, data[i][word]]);
+            };
+        };
+
+        var result = (shuffle_array(temp_array)[0]);
+        speech_type = result[0];
+        word        = result[1];
+        answer      = result[2];
 
         update_dom();
     };
