@@ -39,7 +39,7 @@
     function update_dom() {
         dom_word.innerHTML = word;
         dom_result.innerHTML = '&mdash; ' + answer;
-        dom_speech.innerHTML = speech_type;
+        dom_speech.innerHTML = '[' + speech_type + ']';
     };
 
     document.onkeydown = function(e) {
