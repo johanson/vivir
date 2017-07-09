@@ -6,6 +6,7 @@
     var dom_word = document.getElementById('word');
     var dom_result = document.getElementById('result');
     var dom_speech = document.getElementById('speech');
+    var wrapper = document.getElementById('wrp');
     var tts = document.getElementById("tts");
 
     var request = new XMLHttpRequest();
@@ -43,9 +44,13 @@
     };
 
     function update_dom() {
-        dom_word.innerHTML = word;
-        dom_result.innerHTML = '&mdash; ' + answer;
-        dom_speech.innerHTML = '[' + speech_type + ']';
+        wrapper.classList.remove('blur');
+        setTimeout(function(){ 
+            wrapper.classList.add('blur');
+            dom_word.innerHTML = word;
+            dom_result.innerHTML = '&mdash; ' + answer;
+            dom_speech.innerHTML = '[' + speech_type + ']';
+        }, 10);
     };
 
     document.onkeydown = function(e) {

@@ -39,6 +39,9 @@ body {
 
 #wrp {
     margin-top: -100px;
+}
+
+.blur {
     animation: blurry 0.3s cubic-bezier(0, 0.30, 0.20, 1);
     animation-iteration-count: 1;
     transform: translate3d(0, 0, 0);
