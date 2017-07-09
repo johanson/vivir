@@ -41,6 +41,9 @@ body {
     margin-top: -100px;
     animation: blurry 0.3s cubic-bezier(0, 0.30, 0.20, 1);
     animation-iteration-count: 1;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 h1 {
