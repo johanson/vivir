@@ -3,7 +3,7 @@
     "name": "Vivir",
     "short_name": "Vivir",
     "default_locale": "en",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "homepage_url": "https://gitlab.com/rasmus/vivir",
     "description": "Vivir: new tab with a new Spanish word.",
     "icons": {
