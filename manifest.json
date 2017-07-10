@@ -1,13 +1,15 @@
 {
     "manifest_version": 2,
     "name": "Vivir",
-    "short_name": "Vivir",
     "version": "1.0.4",
-    "homepage_url": "https://gitlab.com/rasmus/vivir",
+    "short_name": "Vivir",
     "description": "Vivir: new tab with a new Spanish word.",
     "icons": {
         "128": "icon_128.png"
     },
+    "author": "Rasmus Johanson",
+    "homepage_url": "https://gitlab.com/rasmus/vivir",
+    "minimum_chrome_version": "55",
     "chrome_url_overrides": {
         "newtab": "index.html"
     },
