@@ -1,13 +1,16 @@
 {
-    "chrome_url_overrides": {
-        "newtab": "index.html"
-    },
+    "manifest_version": 2,
+    "name": "Vivir",
+    "short_name": "Vivir",
+    "default_locale": "en",
+    "version": "1.0.3",
+    "homepage_url": "https://gitlab.com/rasmus/vivir",
     "description": "Vivir: new tab with a new Spanish word.",
     "icons": {
         "128": "icon_128.png"
     },
-    "manifest_version": 2,
-    "name": "Vivir",
-    "version": "1.0.3",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
