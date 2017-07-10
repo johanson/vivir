@@ -50,7 +50,7 @@
             dom_word.innerHTML = word;
             dom_result.innerHTML = '&mdash; ' + answer;
             dom_speech.innerHTML = '[' + speech_type + ']';
-        }, 10);
+        }, 50);
     };
 
     document.onkeydown = function(e) {
