@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Vivir",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "short_name": "Vivir",
     "description": "Vivir: new tab with a new Spanish word.",
     "icons": {
