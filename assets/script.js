@@ -9,6 +9,8 @@
     var wrapper = document.getElementById('wrp');
     var tts = document.getElementById("tts");
 
+    restore_options();
+
     var request = new XMLHttpRequest();
     request.open('GET', '../data/data.json', true);
     request.onload = function() {
@@ -60,5 +62,16 @@
     tts.onclick = function() {
         responsiveVoice.speak(word, 'Spanish Female');
     };
+
+    function restore_options() {
+        chrome.storage.sync.get({
+            use_dark_theme: false
+        }, function(items) {
+            if (items.use_dark_theme) {
+                document.body.classList.add("dark");          
+            }
+         });
+    }
+
 
 })();
