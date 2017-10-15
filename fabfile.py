@@ -8,7 +8,8 @@ from fabric.colors import red
 
 def build():
     if cmd_exists('zip'):
-        local('zip -r "dist/vivir.zip" . -x "*.git*"')
+    	local('rm dist/vivir.zip')
+        local('zip -r "dist/vivir.zip" . -x \*.git\* fabfile.py dist/')
     else:
         print(red("Install zip!"), "apt install zip")
 

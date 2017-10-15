@@ -56,8 +56,11 @@
     };
 
     document.onkeydown = function(e) {
+        // 32 == space
         (e.keyCode == 32) && generate();
-    };
+        // 80 == p
+        (e.keyCode == 80) && responsiveVoice.speak(word, 'Spanish Female');
+    };   
 
     tts.onclick = function() {
         responsiveVoice.speak(word, 'Spanish Female');
