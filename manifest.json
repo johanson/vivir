@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Vivir",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "short_name": "Vivir",
     "description": "Vivir: new tab with a new Spanish word.",
     "icons": {
@@ -19,6 +19,5 @@
     },
     "permissions": [
         "storage"
-    ],    
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+    ]
 }

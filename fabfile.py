@@ -4,11 +4,13 @@ import os
 
 from fabric.api import local
 from fabric.colors import red
+from fabric.api import settings
 
 
 def build():
     if cmd_exists('zip'):
-    	local('rm dist/vivir.zip')
+        with settings(warn_only=True):
+            local('mkdir dist; rm dist/vivir.zip')
         local('zip -r "dist/vivir.zip" . -x \*.git\* fabfile.py dist/')
     else:
         print(red("Install zip!"), "apt install zip")
