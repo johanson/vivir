@@ -6,6 +6,6 @@ Clean, simple interface with TTS (Spanish words to speech) support.
 
 ![Vivir screenshot light](screenshots/screenshot-1-normal.png?raw=true)
 
-![Vivir screensho dark](screenshots/screenshot-2-dark.png?raw=true)
+![Vivir screenshot dark](screenshots/screenshot-2-dark.png?raw=true)
 
-[Download from Chrome Web Store.](https://chrome.google.com/webstore/detail/vivir/caeaebomibcajmmkgjchpjedelpkcogi)
+Install from [Chrome Web Store](https://chrome.google.com/webstore/detail/vivir/caeaebomibcajmmkgjchpjedelpkcogi) for Chromium based browsers or [Mozilla Firefox](https://addons.mozilla.org/en-US/developers/addon/vivir/edit) addon.
